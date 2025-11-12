@@ -5,6 +5,8 @@ import PersonalInfo from './PersonalInfo';
 import ProfessionalInfo from './ProfessionalInfo';
 import AddressInfo from './AddressInfo';
 import LoadingSpinner from './LoadingSpinner';
+import Header from './header';
+import Layout from './Layout';
 
 function UserProfile() {
     const [profile, setProfile] = useState({
@@ -110,6 +112,8 @@ function UserProfile() {
     }
 
     return (
+        <>
+    <Layout>
         <div className="profile-container">
             <ProfileHeader
                 isEditing={isEditing}
@@ -138,6 +142,9 @@ function UserProfile() {
                 />
             </div>
         </div>
+        </Layout>
+        </>
+        
     );
 }
 

@@ -7,6 +7,7 @@ import Counter from './components/Counter'
 import Users from './components/Users'
 import UserProfile from './components/UserProfile'
 import { BrowserRouter, Link, Route, Routes, useSearchParams } from 'react-router-dom'
+import ErrorPage from './components/404'
 
 function App() {
   return (
@@ -14,20 +15,13 @@ function App() {
       <div>
          
         <BrowserRouter >
-        <main className="app-content">
-          <nav className="app-navigation">
-             <Link className='nav-btn active' to="/">Home</Link>
-             <Link className='nav-btn' to="/profile">Profile</Link>
-             <Link className='nav-btn' to="/users">Users</Link>
-             <Link className='nav-btn' to="/counter">Counter</Link>
-          </nav>
-          </main>
+        
           <Routes>
             <Route path='/' element={<Greeting name="Samuel" />} />
             <Route path='/profile' element={<UserProfile />} />
             <Route path='/users' element={<Users/>} />
             <Route path='/counter' element={<Counter/>} />
-            <Route path="*" element={<h2>404 - Page Not Found</h2>} />
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
         </BrowserRouter>
         
