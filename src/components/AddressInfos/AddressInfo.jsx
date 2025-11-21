@@ -1,4 +1,4 @@
-import FormField from './FormField';
+import FormField from '../FormFields/FormField';
 import './AddressInfo.css';
 
 function AddressInfo({ profile, isEditing, onChange }) {

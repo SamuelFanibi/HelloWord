@@ -1,4 +1,4 @@
-import FormField from './FormField';
+import FormField from '../FormFields/FormField';
 import './PersonalInfo.css';
 
 function PersonalInfo({ profile, isEditing, onChange }) {

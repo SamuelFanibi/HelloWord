@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "./header";
-import Layout from "./Layout";
+import Layout from "./Layouts/Layout";
 
 function Users() {
     const [users, setUsers] = useState([]);

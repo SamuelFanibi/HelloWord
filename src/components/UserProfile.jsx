@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import './UserProfile.css';
-import ProfileHeader from './ProfileHeader';
-import PersonalInfo from './PersonalInfo';
-import ProfessionalInfo from './ProfessionalInfo';
-import AddressInfo from './AddressInfo';
-import LoadingSpinner from './LoadingSpinner';
+import ProfileHeader from './ProfileHeaders/ProfileHeader';
+import PersonalInfo from './PersonalInfos/PersonalInfo';
+import ProfessionalInfo from './ProfessionalInfos/ProfessionalInfo';
+import AddressInfo from './AddressInfos/AddressInfo';
+import LoadingSpinner from './LoadingSpinners/LoadingSpinner';
 import Header from './header';
-import Layout from './Layout';
+import Layout from './Layouts/Layout';
 
 function UserProfile() {
     const [profile, setProfile] = useState({
